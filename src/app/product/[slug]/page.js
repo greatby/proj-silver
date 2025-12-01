@@ -1,25 +1,24 @@
-// PREMIUM PRODUCT PAGE (Apple-style Aesthetic, Tailwind CSS Only)
-// File: app/product/[slug]/page.jsx
-// Clean, minimal, cinematic product layout for 999 Silver Coins
-
-import HeadMeta from '@/components/HeadMeta'
-import Image from 'next/image'
+import HeadMeta from "@/components/HeadMeta";
+import Image from "next/image";
 
 export default function ProductPage({ params }) {
-  const slug = params.slug || 'product'
-  const title = slug.replace(/-/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase())
+  console.log(params)
+  const slug = params.slug || "product";
+  const title = slug
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (l) => l.toUpperCase());
 
   const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
+    "@context": "https://schema.org",
+    "@type": "Product",
     name: title,
-    brand: 'SilverCoins',
+    brand: "SilverCoins",
     offers: {
-      '@type': 'Offer',
-      priceCurrency: 'INR',
-      availability: 'https://schema.org/InStock',
+      "@type": "Offer",
+      priceCurrency: "INR",
+      availability: "https://schema.org/InStock",
     },
-  }
+  };
 
   return (
     <>
@@ -47,10 +46,13 @@ export default function ProductPage({ params }) {
 
           {/* RIGHT — PRODUCT DETAILS */}
           <div>
-            <h1 className="text-4xl font-extrabold text-slate-900 leading-tight">{title}</h1>
+            <h1 className="text-4xl font-extrabold text-slate-900 leading-tight">
+              {title}
+            </h1>
             <p className="mt-4 text-lg text-slate-600 max-w-xl">
-              Premium 999 purity silver coin ideal for gifting, festivals, weddings and
-              personal collection. Hallmarked and certified with tamper-proof premium packaging.
+              Premium 999 purity silver coin ideal for gifting, festivals,
+              weddings and personal collection. Hallmarked and certified with
+              tamper-proof premium packaging.
             </p>
 
             {/* PRICE */}
@@ -91,11 +93,15 @@ export default function ProductPage({ params }) {
             {/* ICON HIGHLIGHTS */}
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm text-slate-600">
               <div>
-                <h4 className="font-medium text-slate-900">999 Purity Silver</h4>
+                <h4 className="font-medium text-slate-900">
+                  999 Purity Silver
+                </h4>
                 Premium BIS hallmarking included
               </div>
               <div>
-                <h4 className="font-medium text-slate-900">Gift Ready Packaging</h4>
+                <h4 className="font-medium text-slate-900">
+                  Gift Ready Packaging
+                </h4>
                 Velvet box + certificate of authenticity
               </div>
               <div>
@@ -103,7 +109,9 @@ export default function ProductPage({ params }) {
                 Insured delivery pan-India
               </div>
               <div>
-                <h4 className="font-medium text-slate-900">Easy Customization</h4>
+                <h4 className="font-medium text-slate-900">
+                  Easy Customization
+                </h4>
                 Add name, date or logo
               </div>
             </div>
@@ -115,7 +123,9 @@ export default function ProductPage({ params }) {
       <section className="bg-slate-50 py-20 border-t border-slate-100">
         <div className="container mx-auto px-6 grid md:grid-cols-2 gap-16">
           <div>
-            <h2 className="text-2xl font-bold text-slate-900">Product Details</h2>
+            <h2 className="text-2xl font-bold text-slate-900">
+              Product Details
+            </h2>
             <div className="mt-6 space-y-3 text-slate-700 text-sm">
               <p>• Purity: 999 Silver</p>
               <p>• Finish: Proof / Matte</p>
@@ -126,15 +136,18 @@ export default function ProductPage({ params }) {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-slate-900">Why Choose SilverCoins?</h2>
+            <h2 className="text-2xl font-bold text-slate-900">
+              Why Choose SilverCoins?
+            </h2>
             <p className="mt-6 text-slate-700 text-sm leading-relaxed max-w-lg">
-              Every SilverCoins product is crafted with precision, authenticated with BIS
-              hallmarking and delivered with care. We offer premium designs inspired by cultural
-              heritage, festival traditions and modern gifting aesthetics.
+              Every SilverCoins product is crafted with precision, authenticated
+              with BIS hallmarking and delivered with care. We offer premium
+              designs inspired by cultural heritage, festival traditions and
+              modern gifting aesthetics.
             </p>
           </div>
         </div>
       </section>
     </>
-  )
+  );
 }

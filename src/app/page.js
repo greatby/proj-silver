@@ -75,7 +75,7 @@ export default function HomePage() {
 
         {/* subtle decorative gradient / white space on right edge */}
         <div className="absolute inset-y-0 right-0 w-1/3 pointer-events-none" aria-hidden>
-          <div className="h-full bg-gradient-to-r from-transparent to-white"></div>
+          <div className="h-full bg-linear-to-r from-transparent to-white"></div>
         </div>
       </section>
 

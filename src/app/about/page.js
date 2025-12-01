@@ -1,6 +1,3 @@
-// PREMIUM ABOUT PAGE (Apple-Style Minimalism, Tailwind-Only)
-// File: app/about/page.jsx
-
 import HeadMeta from "@/components/HeadMeta";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,7 +20,7 @@ export default function AboutPage() {
       />
 
       {/* HERO */}
-      <section className="py-24 bg-gradient-to-br from-white to-slate-50 border-b border-slate-100">
+      <section className="py-24 bg-linear-to-br from-white to-slate-50 border-b border-slate-100">
         <div className="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
           {/* LEFT TEXT */}
           <div>
@@ -32,16 +29,17 @@ export default function AboutPage() {
               <br /> Delivering Trust.
             </h1>
             <p className="mt-6 text-lg text-slate-600 max-w-xl">
-              At SilverCoins, we create premium 999 purity silver coins designed for
-              celebrations, blessings, gifting and investments. Our philosophy is simple —
-              blend timeless tradition with modern craftsmanship.
+              At SilverCoins, we create premium 999 purity silver coins designed
+              for celebrations, blessings, gifting and investments. Our
+              philosophy is simple — blend timeless tradition with modern
+              craftsmanship.
             </p>
           </div>
 
           {/* RIGHT IMAGE */}
           <div className="rounded-3xl overflow-hidden shadow-xl border border-slate-100 max-w-xl w-full">
             <Image
-              src="/about-hero.jpg"
+              src="/images/purity.png"
               alt="About SilverCoins"
               width={700}
               height={600}
@@ -57,16 +55,17 @@ export default function AboutPage() {
           <div>
             <h2 className="text-3xl font-bold text-slate-900">Our Mission</h2>
             <p className="mt-6 text-slate-600 text-sm leading-relaxed max-w-xl">
-              Our mission is to make premium silver accessible to everyone — with
-              unparalleled purity, elegant designs and a seamless buying experience.
-              Whether it’s a festival offering, a wedding gift, a company keepsake or an
-              investment piece, every SilverCoins product carries trust and quality.
+              Our mission is to make premium silver accessible to everyone —
+              with unparalleled purity, elegant designs and a seamless buying
+              experience. Whether it’s a festival offering, a wedding gift, a
+              company keepsake or an investment piece, every SilverCoins product
+              carries trust and quality.
             </p>
           </div>
 
           <div className="rounded-3xl overflow-hidden shadow-xl border border-slate-100 max-w-xl w-full">
             <Image
-              src="/mission.jpg"
+              src="/images/plain.png"
               alt="Mission"
               width={700}
               height={600}
@@ -87,23 +86,32 @@ export default function AboutPage() {
 
         <div className="container mx-auto px-6 mt-16 grid md:grid-cols-3 gap-16">
           <div className="text-center">
-            <h3 className="text-xl font-semibold text-slate-900">Unmatched Purity</h3>
+            <h3 className="text-xl font-semibold text-slate-900">
+              Unmatched Purity
+            </h3>
             <p className="mt-3 text-sm text-slate-600">
-              Every product is made using 999 purity silver, BIS hallmarked and certified.
+              Every product is made using 999 purity silver, BIS hallmarked and
+              certified.
             </p>
           </div>
 
           <div className="text-center">
-            <h3 className="text-xl font-semibold text-slate-900">Elegant Craftsmanship</h3>
+            <h3 className="text-xl font-semibold text-slate-900">
+              Elegant Craftsmanship
+            </h3>
             <p className="mt-3 text-sm text-slate-600">
-              Our designs combine traditional motifs with contemporary minimalism.
+              Our designs combine traditional motifs with contemporary
+              minimalism.
             </p>
           </div>
 
           <div className="text-center">
-            <h3 className="text-xl font-semibold text-slate-900">Customer First</h3>
+            <h3 className="text-xl font-semibold text-slate-900">
+              Customer First
+            </h3>
             <p className="mt-3 text-sm text-slate-600">
-              From customization to delivery, every step is crafted for your satisfaction.
+              From customization to delivery, every step is crafted for your
+              satisfaction.
             </p>
           </div>
         </div>
@@ -115,34 +123,38 @@ export default function AboutPage() {
           <div>
             <h2 className="text-3xl font-bold text-slate-900">Our Story</h2>
             <p className="mt-6 text-slate-600 text-sm leading-relaxed max-w-xl">
-              SilverCoins began with a simple vision — to elevate silver gifting and create
-              beautifully crafted products that carry emotion, value and purity.
+              SilverCoins began with a simple vision — to elevate silver gifting
+              and create beautifully crafted products that carry emotion, value
+              and purity.
               <br />
               <br />
-              What started as a small passion has grown into a national brand trusted for
-              authenticity, customization and premium quality. We are dedicated to making every
-              silver coin a symbol of blessings, prosperity and elegance.
+              What started as a small passion has grown into a national brand
+              trusted for authenticity, customization and premium quality. We
+              are dedicated to making every silver coin a symbol of blessings,
+              prosperity and elegance.
             </p>
           </div>
 
           <div className="rounded-3xl overflow-hidden shadow-xl border border-slate-100 max-w-xl w-full">
             <Image
-              src="/story.jpg"
+              src="/images/gifting.png"
               alt="Our Story"
               width={700}
               height={600}
-              className="w-full h-full object-cover"
+              className="w-full h-[400px] object-cover"
             />
           </div>
         </div>
       </section>
 
       {/* CTA SECTION */}
-      <section className="py-20 text-center bg-gradient-to-br from-white to-slate-50 border-t border-slate-100">
-        <h2 className="text-3xl font-bold text-slate-900">Discover Our Premium Silver Coins</h2>
+      <section className="py-20 text-center bg-linear-to-br from-white to-slate-50 border-t border-slate-100">
+        <h2 className="text-3xl font-bold text-slate-900">
+          Discover Our Premium Silver Coins
+        </h2>
         <p className="mt-4 text-slate-600 text-sm max-w-lg mx-auto">
-          Explore hallmarked, certified and elegantly crafted premium silver coins for every
-          occasion.
+          Explore hallmarked, certified and elegantly crafted premium silver
+          coins for every occasion.
         </p>
 
         <Link

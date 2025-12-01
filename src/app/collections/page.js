@@ -15,37 +15,37 @@ export default function CollectionsPage() {
     {
       title: 'Lakshmi Ganesh — 10g',
       href: '/product/lakshmi-ganesh-10g',
-      img: '/sample-coin.jpg',
+      img: '/images/lakshmi-ganesha.webp',
       excerpt: '999 purity • Hallmarked • Festival favorite',
     },
     {
       title: 'Plain Round — 10g',
       href: '/product/plain-10g',
-      img: '/plain-coin.jpg',
+      img: '/images/plain.jpg',
       excerpt: 'Investment grade round, minimal finish.',
     },
     {
       title: 'Tirupati Balaji — 20g',
       href: '/product/balaji-20g',
-      img: '/balaji-coin.jpg',
+      img: '/images/balaji-frontjpg.webp',
       excerpt: 'Temple edition • Collector\'s piece',
     },
     {
       title: 'Custom Engraved Coin',
       href: '/customize',
-      img: '/custom-coin.jpg',
+      img: '/images/custom.webp',
       excerpt: 'Personalize with name, date or logo.',
     },
     {
       title: 'Wedding Return Gift Set',
       href: '/collections?cat=wedding',
-      img: '/wedding-coin.jpg',
+      img: '/images/wedding.jpg',
       excerpt: 'Elegant designs made for wedding return gifts.',
     },
     {
       title: 'Investment Bar — 50g',
       href: '/product/bar-50g',
-      img: '/bar-50g.jpg',
+      img: '/images/investment.jpg',
       excerpt: 'Bulk investment options with lower making charges.',
     },
   ]
